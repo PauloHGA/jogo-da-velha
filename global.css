@@ -1,0 +1,85 @@
+body{
+    text-align: center;
+    background: rgb(169, 228, 247);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 117, 0)
+}
+.placar{
+    text-align: left;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: .5rem;
+    background:rgb(128, 223, 255) ;
+    margin-bottom: 1rem;
+}
+
+.placar h3{
+    margin: 5px;
+}
+
+.jogadorPlacar{
+    padding-left: 5px;
+}
+
+.ajuda{
+    background:rgb(128, 223, 255) ;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    padding-top: 3px;
+    display: flex;
+    margin-left: 50px;
+    font-weight: 700;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
+
+.jogo {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 10px;
+    background: rgb(169, 228, 247);
+    border-radius: 1rem;
+    -webkit-box-shadow: 9px 12px 24px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 9px 12px 24px -7px rgba(0,0,0,0.75);
+box-shadow: 9px 12px 24px -7px rgba(0,0,0,0.75);
+}
+
+.quadrado {
+    text-align: center;
+    width: 50px;
+    background-color: #eee;
+    display: inline-block;
+    padding: 40px;
+    font-size: 60px;
+    margin: 5px;
+    cursor: pointer;
+    color: #eee;
+    border: 1px solid rgb(88, 85, 85);
+
+}
+
+.jogador, .vencedor{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+button{
+    margin-top: 10px;
+    width: 180px;
+    height: 30px;
+    background: #eee;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: 2px solid;
+}
+
+#vencedor-selecionado{
+    font-weight: 700;
+    color: rgb(0, 117, 0);
+}

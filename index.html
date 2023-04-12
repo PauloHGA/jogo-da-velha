@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <link rel="shortcut icon" href="434849.png" type="image/x-icon">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <div class="jogo">
+    
+     <div style="display: flex;">  
+
+    <div class="placar">
+        <h3>Placar</h3>
+        <div>
+            <label class="jogadorPlacar">X: </label>
+            <label class="jogadorPlacar" id="placar-X"></label>
+        </div>
+        <div>
+            <label class="jogadorPlacar">O: </label>
+            <label class="jogadorPlacar" id="placar-O"></label>
+        </div>
+    </div>
+
+    <h1 style="text-align: center; margin-left: 4rem;">Jogo da Velha</h1>
+    <a href="https://youtu.be/rnuyfRMN4lg" target="_blank">
+    <div class="ajuda" title="Como Jogar">?</div>
+    </a>
+    </div> 
+
+
+
+<div>
+    <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+</div>
+<div>
+    <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+</div>
+<div>
+    <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+</div>
+
+<div>
+    <label class="jogador">Jogador:</label>
+    <label class="jogador" id="jogador-selecionado"></label>
+</div>
+
+<div>
+    <label class="vencedor" >Vencedor:</label>
+    <label class="vencedor" id="vencedor-selecionado"></label>
+</div>
+
+<button onclick="reiniciar()">Reiniciar Jogo</button>
+
+</div>
+
+
+
+<script src="velha.js"></script>
+    
+</body>
+</html>
