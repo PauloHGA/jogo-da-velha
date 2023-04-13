@@ -31,10 +31,11 @@ a{
     padding: 10px;
     padding-top: 3px;
     display: flex;
-    margin-left: 50px;
+    margin-left: 90px;
     font-weight: 700;
     border: 1px solid black;
     cursor: pointer;
+    border-radius: .7rem;
 
 }
 
@@ -45,8 +46,8 @@ a{
     background: rgb(169, 228, 247);
     border-radius: 1rem;
     -webkit-box-shadow: 9px 12px 24px -7px rgba(0,0,0,0.75);
--moz-box-shadow: 9px 12px 24px -7px rgba(0,0,0,0.75);
-box-shadow: 9px 12px 24px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 12px 24px -7px rgba(0,0,0,0.75);
+    box-shadow: 9px 12px 24px -7px rgba(0,0,0,0.75);
 }
 
 .quadrado {

@@ -6,6 +6,7 @@ var placarX = document.getElementById('placar-X');
 var placarO = document.getElementById('placar-O');
 
 var valor = null;
+var counterVal = 0;
 
 aleatorio = randomNumber(1, 2)
 
@@ -38,6 +39,9 @@ if (jogador === 'X') {
     jogador = 'X';
 }
 
+    (++counterVal);
+
+
     mudarJogador(jogador);
     checarVencedor();
 }
@@ -45,7 +49,6 @@ if (jogador === 'X') {
 function randomNumber(a, b) {
     return Math.floor(Math.random() * (b -a +1)) + a
 }
-
 
 
 function mudarJogador(valor){
@@ -113,7 +116,16 @@ function checarVencedor() {
         return;
     }
 
+    if (counterVal === 9){
+        mudarCorQuadradoV(quadrado1, quadrado3, quadrado4, quadrado6, quadrado8);
+
+        return;
+    }
+
+
+
 }
+
 
 let countX = 0;
 let countO = 0;
@@ -132,7 +144,13 @@ function mudarVencedor(quadrado){
     }
 }
 
-
+function mudarCorQuadradoV(quadrado1, quadrado2, quadrado3, quadrado4, quadrado5) {
+    quadrado1.style.background = '#c00';
+    quadrado2.style.background = '#c00';
+    quadrado3.style.background = '#c00';
+    quadrado4.style.background = '#c00';
+    quadrado5.style.background = '#c00';
+}
 
 function mudarCorQuadrado(quadrado1, quadrado2, quadrado3) {
     quadrado1.style.background = '#0f0';
@@ -148,6 +166,10 @@ function checarSequencia(quadrado1, quadrado2, quadrado3){
     }
 
     return eigual;
+}
+
+function resetCounter() {
+    counterVal = 0;
 }
 
 function reiniciar(){
@@ -170,4 +192,6 @@ function reiniciar(){
     }
 
     mudarJogador(valor);
+
+    counterVal = 0;
 }
